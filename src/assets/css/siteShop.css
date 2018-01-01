@@ -1,0 +1,8 @@
+.siteShopTitle .dropDown{
+  display: inline-block;
+  width: .2rem;
+  height: .12rem;
+  background: url('../images/dropDown.jpg') no-repeat;
+  background-size: .2rem .12rem;
+  margin-left: .26rem;
+}

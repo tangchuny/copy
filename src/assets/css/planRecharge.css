@@ -1,0 +1,9 @@
+.weatherImg{
+  width: .88rem;
+  height: .82rem;
+  position: absolute;
+  top: .46rem;
+  left: .8rem;
+  background: url('../images/weather.jpg') no-repeat;
+  background-size: .88rem .82rem;
+}

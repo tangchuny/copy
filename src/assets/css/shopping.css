@@ -1,0 +1,92 @@
+/*测试body页面的背景色，用于页面左右的圆圈*/
+/* body{
+ background: #ebebeb;
+} */
+.shoppingBox{
+  padding: 0 .4rem;
+}
+.shoppingCon{
+  font-size: .28rem;
+  margin-top: .73rem;
+  
+  border-radius: 6px;
+  padding-bottom: .88rem;
+  position: relative;
+  background-color: #fff;
+}
+.shoppingBox .shoppingTitle{
+  font-weight: normal;
+  text-align: center;
+  color: #333333;
+  padding-top: .74rem;
+}
+.shoppingCon .rechargeImg{
+  width: 6.17rem;
+  margin-left: 20px;
+  text-align: center;
+  border-bottom: 1px solid #b9bcd6;
+  margin-top: 4px;
+}
+.shoppingCon .rechargeImg img{
+  width: 3.69rem;
+  height: 1.72rem;
+  vertical-align: bottom;
+}
+.rechargeNum{
+  padding-top: .65rem;
+}
+.rechargeNum li{
+  overflow: hidden;
+  padding:.22rem .4rem;;
+}
+.rechargeNum span{
+  color: #666666;
+}
+.rechargeNum span:nth-of-type(1){
+  float: left;
+}
+ .rechargeNum span:nth-of-type(2){
+  float: right;
+}
+.stopRecharge{
+  width: 5.8rem;
+  height: .8rem;
+  background-color: #d51624;
+  line-height: .8rem;
+  text-align: center;
+  color: #ffffff;
+  text-align: center;
+  margin-left: .44rem;
+  border-radius: 4px;
+  box-shadow: 0 1px  1px #f7d0d3;
+  margin-top: .53rem;
+}
+.rechargeLeftBg{
+  width: .5rem;
+  height: .5rem;
+  border-radius: .25rem;
+  background-color: #ebebeb;
+  position: absolute;
+  top: 2.08rem;
+  left:-.25rem;
+}
+.rechargeRightBg{
+  width: .5rem;
+  height: .5rem;
+  border-radius: .25rem;
+  background-color: #ebebeb;
+  position: absolute;
+  top: 2.08rem;
+  right:-.25rem;
+}
+
+.rechargePhone{
+  position: absolute;
+  left: 2.38rem;
+  bottom: .37rem;
+  color: #333333;
+  font-size: .24rem;
+}
+.rechargePhone span{
+  color: #999999;
+}

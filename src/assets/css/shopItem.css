@@ -1,0 +1,62 @@
+.shopItem{
+    font-size: .28rem;
+}
+.shopItem .buyShopName {
+    overflow: hidden;
+    padding:.29rem .2rem .31rem .24rem;
+    border-bottom: 1px solid #dcdcdc;
+}
+.buyShopName .shopItemName{
+    float: left;
+    color: #333333;
+}
+.buyShopName .shopItemNum{
+    float: right;
+    color: #333333;
+}
+.buyShopName .shopItemNum span{
+    color: #de0000;
+}
+.shopItem .detailPrice{
+    border-bottom: 1.03rem solid #ebebeb;
+}
+
+.buyShopContent{
+    padding-left: .3rem;
+    padding-top: .3rem;
+}
+.buyShopContent h3{
+    font-size: .32rem;
+    color: #333333;
+    font-weight: normal;
+    padding-bottom: 0.07rem;
+}
+.shopListBox li{
+    overflow: hidden;
+    padding-top: .2rem;
+}
+.shopListBox li .shopListImt{
+    float: left;
+    width: 3.58rem;
+    height: 2.49rem;
+}
+.shopListBox li .shopListImt img{
+    width: 100%;
+    height: 100%;
+}
+.shopListBox li .shopListText{
+    float: left;
+    padding-left: .3rem;
+    width: 3.08rem;
+    color: #666666;
+}
+
+.shopItem .shopBtn{
+    width: 100%;
+}
+.shopItem  .shopBtn{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 99;
+}

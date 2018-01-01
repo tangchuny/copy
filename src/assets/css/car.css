@@ -1,0 +1,223 @@
+.purchaseHead{
+    padding: 0 .29rem;
+    font-size: .28rem;
+    overflow: hidden;
+    padding-top: .4rem;
+    padding-bottom: .38rem;
+}
+.purchaseAll{
+    float: left;
+    line-height: 1;
+}
+.purchaseAll span:nth-of-type(1){
+    float: left;
+    width: .28rem;
+    height: .28rem;
+    border-radius: .14rem;
+    border: 1px solid #b7b7b7;
+}
+.purchaseAll img{
+    width: .4rem;
+    height: 0.4rem;
+    vertical-align: middle;
+    padding: 0 5px 0 0;
+}
+.purchaseAll .red{
+    border: 1px solid red;
+}
+.purchaseAll h3{
+    float: left;
+    color: #333333;
+    margin-left: .2rem;
+}
+.purchaseComplete{
+    float: right;
+    color: #456db6;
+}
+
+.purchaseShop{
+    border-top:1px solid #dcdcdc;
+    overflow: hidden;
+    border-bottom: .18rem solid #ebebeb;
+}
+.purchaseShop li{
+    overflow: hidden;
+    border-bottom: 1px solid #dcdcdc;
+    padding-left: .29rem;
+}
+.purchaseShop li .shopBtn{
+    float: left;
+    width: .28rem;
+    height: .28rem;
+    border-radius: .14rem;
+    border: 1px solid #b7b7b7;
+    margin-top: .84rem;
+    margin-right: .21rem;
+}
+.purchaseShop li .shopPic{
+    float: left;
+    width: 1.55rem;
+    height: 1.56rem;
+    margin-top: .2rem;
+    margin-right: .34rem;
+}
+.purchaseShop li .shopPic img{
+    width: 1.55rem;
+    height: 1.56rem;
+}
+.shopDescribe{
+    float: left;
+    margin-top: .2rem;
+    
+}
+.shopDescribe .shopNum{
+   overflow: hidden;
+}
+.shopDescribe .shopNum .commodityNum{
+    float: left;
+    width: .71rem;
+    height: .55rem;
+    line-height: .55rem;
+    text-align: center;
+    border:1px solid #989898;
+    font-size: .28rem;
+}
+.shopDescribe .shopNum .minusBtn{
+    float: left;
+    width: .64rem;
+    height: .55rem;   
+    border:1px solid #dcdcdc;
+    border-right: none;
+    background-color: #f9f9f9;
+}
+.shopDescribe .minusBtn i{
+    float: left;
+    width: .2rem;
+    height: 2px;
+    background-color: #989898;
+    margin-left: .25rem;
+    margin-top: .28rem;
+}
+.shopDescribe .shopNum .plusBtn{
+    float: left;
+    width: .72rem;
+    height: .55rem;
+    border:1px solid #989898;
+    border-left: none;
+    background-color: #ffffff;
+    position: relative;
+}
+.shopDescribe .plusBtn i{
+    position: absolute;
+    width: .2rem;
+    height: 2px;
+    background-color: #666666;
+}
+.shopDescribe .plusBtn i:nth-of-type(1){
+   left: .29rem;
+   top:.29rem;
+}
+.shopDescribe .plusBtn i:nth-of-type(2){
+    transform: rotate(90deg);
+    left: .3rem;
+    top: .28rem;
+}
+.shopDescribe p:nth-of-type(1){
+    color: #999999;
+    font-size: .24rem;
+    padding: .11rem 0;
+}
+.shopDescribe p:nth-of-type(2){
+    font-size: .28rem;
+    color: #de0000;
+}
+.purchaseShop .shopDelete{
+    width: 1.5rem;
+    float: right;
+    font-size: .28rem;
+    color: #ffffff;
+    background-color: #d51624;
+    text-align: center;
+    padding-top: .88rem;
+    padding-bottom: .83rem;
+}
+
+.purchase2{
+    padding-bottom: 1.73rem;
+}
+
+.purchase2 .purchaseHead{
+    padding-left: 0 .29rem;
+    font-size: .28rem;
+    overflow: hidden;
+    line-height: 1;
+    padding-top: .4rem;
+    padding-bottom: .15rem;
+    border-top:1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    background-color: #fff;
+}
+.purchase2 .purchaseHead span{
+    float: left;
+    width: .28rem;
+    height: .28rem;
+    border-radius: .14rem;
+    border: 1px solid #b7b7b7;
+}
+.purchase2 .purchaseHead h3{
+    float: left;
+    color: #333333;
+    margin-left: .2rem;
+}
+.purchase2 .purchaseShop{
+    border: none;
+}
+.purchase2 .purchaseShop .shopPic,.purchase2 .purchaseShop .shopDescribe{
+    margin-top: .4rem;
+}
+.purchase2 .purchaseShop .shopDelete{
+    margin-top: .2rem;
+}
+.shopBtnSelect{
+    padding-left: .29rem;
+    overflow: hidden;
+    border-top: 1px solid #b5b5b5;
+}
+.shopBtnSelect .purchaseAll span{
+    margin-top: .36rem;
+}
+.shopBtnSelect .purchaseAll span:nth-of-type(2){
+    float: left;
+    font-size: .28rem;
+    color: #666666;
+    padding-left: .26rem;
+}
+.shopBtnSelect .shopBtnSelectDelete{
+   float: right;
+   font-size: .24rem;
+   color: #ffffff;
+   /* background-color: #b5b5b5; */
+   width:1.79rem;
+   text-align: center;
+   height: 1rem;
+   line-height: 1rem;
+}
+.shopBtnSelect .shopBtnSelectDelete2{
+    font-size: .24rem;
+    color: #ffffff;
+    width:1.79rem;
+    text-align: center;
+    height: 1rem;
+    line-height: 1rem;
+ }
+.carSelectAll{
+    display: flex;
+    font-size: .28rem;
+    position: fixed;
+    bottom: 1rem;
+    width: 100%;
+    left: 0;
+    height: 1rem;
+    border-top: 1px solid #bfbfbf;
+    background: #ffffff;
+}

@@ -1,0 +1,13 @@
+.scanUnderway .scanBtn{
+  position: absolute;
+  top: 6.72rem;
+}
+.serviceTel{
+  font-size: .24rem;
+  position: absolute;
+  bottom: .48rem;
+  left: 2.58rem;
+}
+.serviceTel span{
+  color: #999999;
+}

@@ -1,0 +1,87 @@
+
+.wrap {
+  padding-bottom: .82rem;
+}
+.geoLocation {
+  font-size: .28rem;
+  padding: .2rem .3rem;
+}
+.geoLocation span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.geoLocation img {
+  display: block;
+  width: .27rem;
+}
+.geoLocation .geo {
+  color: #666;
+  font-family: '黑体';
+  margin: 0 0 0 5px
+}
+.swiperBox {
+  height: 3.56rem;
+}
+.swiperBox img {
+  width: 100%;
+}
+.mint-swipe-indicators .is-active {
+  opacity: 1;
+}
+.buyBox  {
+  font-size: .3rem;
+  font-family: '微软雅黑';
+}
+.buyBox .title {
+  font-size: 0.30rem;
+  border-bottom: 1px solid #ccc;
+  padding: .26rem;
+  color: #333;
+  font-weight: normal;
+}
+.buyBox .title .more {
+  float: right;
+  color: #c0c0c0;
+  font-size: .28rem;
+  margin-top: .1rem;
+}
+.buyBox ul {
+  border-bottom: .18rem solid #f2f2f2;
+}
+.buyBox ul .pic{
+  display: block;
+  float: left;
+  width: 1.96rem;
+}
+.buyBox ul h3{
+  font-size: .28rem;
+  color: #313131;
+  padding-bottom: .21rem;
+}
+.buyBox ul p{
+  color: #999999;
+  padding: .12rem 0;
+  line-height: 1;
+}
+.buyBox ul li{
+  border-bottom: 1px solid #eaeaea;
+  padding: .35rem;
+}
+.geo2 {
+  display: inline-block;
+  width: .21rem;
+  margin-right: .12rem;
+}
+.buyBox .price {
+  background: #c9101e;
+  color: #fff;
+  display: inline-block;
+  padding: 6px 16px;
+}
+
+
+
+
+
+
+

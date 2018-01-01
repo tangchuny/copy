@@ -1,0 +1,110 @@
+.myOrder {
+    font-size: .24rem;
+    overflow: hidden;
+    padding-top: .38rem;
+    border-bottom: 1px solid #dcdcdc;
+}
+.myOrder div{
+    float: left;
+    color: #666666;
+    width: 50%;
+    text-align: center;
+    padding-bottom: .34rem;
+}
+.myOrder .active{
+    color: #be0712;
+    border-bottom: 2px solid #be0712;
+}
+
+.officialStore{
+    border-top:.14rem solid #ebebeb;  
+}
+.officialStore .storeHead{
+    border-top:1px solid #efefef;
+    border-bottom: 1px solid #dcdcdc;
+    font-size: .28rem;
+    overflow: hidden;
+    padding: .15rem .3rem;
+} 
+.officialStore .storeHead h3{
+    float: left;
+    color: #333333;
+}
+.officialStore .storeHead div{
+    float: right;
+    color: #de0000;
+}
+.officialStore .storeContent{
+    overflow: hidden;
+    padding: 0 .3rem;
+    padding-top: .22rem;
+    background-color: #fafafa;
+    padding-bottom: .32rem;
+}
+.storeContent .storePic{
+    float: left;
+    border:1px solid #dcdcdc;
+}
+.storeContent .storePic img{
+    width: 1.56rem;
+    height: 1.56rem;
+}
+.storeContent .storeText{
+    float: left;
+    font-size: .28rem;
+    padding-left: .36rem;
+}
+.storeContent .storeText p:nth-of-type(1){
+    margin-top: 2px;
+    padding-bottom: .12rem;
+}
+.storeContent .storeText p:nth-of-type(1) span{
+    margin-left: 6px;
+}
+.storeContent .storeText p:nth-of-type(2){
+    color: #de0000;
+}
+.storeText p:nth-of-type(2), .storeText p:nth-of-type(3){
+    padding: .12rem 0;
+}
+.storePayment{
+    overflow: hidden;
+    padding:0 .3rem;
+    border-bottom: .2rem solid #ebebeb;
+}
+.storePayment .payment{
+    float: left;
+    font-size: .28rem;
+    padding-top: .32rem;
+}
+.storePayment .payment span:nth-of-type(1){
+    color: #232323;
+}
+.storePayment .payment span:nth-of-type(2){
+    color: #de0000;
+}
+.storePayment .paymentBtn{
+    float: right;
+    font-size: .24rem;
+    padding-top: .22rem;
+    padding-bottom: .15rem;
+}
+.paymentBtn span:nth-of-type(1){
+    float: left;
+    width:1.26rem;
+    height: .52rem;
+    border:1px solid #c9c9c9;
+    color: #999999;
+    text-align: center;
+    line-height: .52rem;
+}
+.paymentBtn span:nth-of-type(2){
+    float: left;
+    width:1.26rem;
+    height: .52rem;
+    border:1px solid #bf0a14;
+    color: #bf0a14;
+    text-align: center;
+    line-height: .52rem;
+    margin-left: .18rem;
+}

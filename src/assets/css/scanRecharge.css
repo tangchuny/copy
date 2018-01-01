@@ -1,0 +1,54 @@
+.scanRechargeBox{
+  position: relative;
+}
+.scanRecharge{
+  font-size: .28rem;
+  padding-left: .4rem;
+  padding-right: .25rem;
+  padding-bottom: .4rem;
+}
+.scanRechargeHead{
+  padding:.24rem 0 .26rem 0;
+  border-bottom: 1px solid #d8d8d8;
+}
+.scanRechargeHead .scanHeaderIco{
+  display: inline-block;
+  width: .7rem;
+  height: .7rem;
+  background-color: #d51624;
+  border-radius: .35rem;
+  vertical-align: middle;
+  text-align: center;
+  margin-right: .2rem;
+}
+.scanRechargeHead .scanHeaderIco i{
+  display: inline-block;
+  width: .33rem;
+  height: .35rem;
+  background: url('../images/scanIco.jpg') no-repeat;
+  background-size: .33rem .35rem;
+  margin-top: .16rem;
+}
+.scanRechargeHead span:nth-last-of-type(2){
+  color: #666666;
+  font-size: .32rem;
+}
+
+.scanRecharge .rechargeNum{
+  padding-top: .43rem;
+}
+.scanRecharge .rechargeNum li{
+  padding: .22rem 0;
+}
+.scanBtn{
+  width: 5.8rem;
+  height: .81rem;
+  text-align: center;
+  line-height: .81rem;
+  font-size: .28rem;
+  color: #ffffff;
+  background-color: #d51624;
+  position: absolute;
+  top: 6.12rem;
+  left: .82rem;
+}

@@ -1,0 +1,167 @@
+.paymentInfo{
+    font-size: .26rem;
+    border-bottom:.2rem solid #ebebeb;
+}
+.payTitle{
+    padding-top: .23rem;
+    padding-bottom: .15rem;
+    color: #333333;
+    border-bottom: 1px solid #e5e5e5;
+    padding-left: .4rem;
+    font-weight: normal;
+    font-size: .28rem;
+    background: #ffffff;
+}
+.fromInfo{
+    padding-left: .23rem;
+    padding-right: .25rem;
+}
+.fromInfo .fromItem{
+    position: relative;
+    border-bottom: 1px solid #efefef;
+    padding:0.32rem 0;
+}
+.fromInfo .fromItem .fromItemTit{
+    position: absolute;
+    left: .17rem;
+    top: .32rem;
+    width: 1.88rem;
+    text-align: left;
+}
+.fromInfo .fromItem  dd{
+    padding-left: 1.88rem;
+
+}
+.fromInfo .fromItem  .fromItemCt input{
+    border: none;
+    outline: none;
+    width: 4rem;
+}
+.fromItem .selectSite span{
+    display: inline-block;
+    width: 1.1rem;
+    color: #333333;
+}
+.fromItem .selectSite span:nth-of-type(1){
+    margin-right: .57rem;
+}
+.fromItem .selectSite span:nth-of-type(2){
+    margin-right: .63rem;
+}
+.fromInfo .inDetail{
+    border:none;
+}
+
+.payShop{
+    font-size: .28rem;
+}
+.payShopList{
+    border-bottom: .18rem solid #ebebeb;
+    overflow: hidden;
+}
+.payShopList li{
+    overflow: hidden;
+    padding:.2rem 0;
+    padding-left: .41rem;
+    border-bottom: 1px solid #eeeeee;
+}
+.payShopList li .payShopListImg{
+    float: left;
+    width: 1.55rem;
+    height: 1.56rem;
+    border: 1px solid #e6e6e6;
+    box-shadow:-1px 0 #f5f5f5;
+}
+.payShopListImg img{
+    width: 100%;
+    height: 100%;
+}
+.payShopList .payShopListText{
+    padding-left: .42rem;
+    float: left;
+}
+.payShopList .payShopListText p:nth-of-type(2){
+    font-size: .24rem;
+    color: #999999;
+    padding-top: .24rem;
+}
+.payShopList .payShopListText p:nth-of-type(3){
+    color: #de0000;
+    padding-top: .16rem;
+}
+.payShopList .payShopNum{
+    float: right;   
+    padding-top: 1.2rem;
+    padding-right: .28rem;
+}
+.payShopList .payShopNum i{
+    display: inline-block;
+    width: .11rem;
+    height: .11rem;
+    background: url('../images/payCancel.jpg') no-repeat;
+    background-size: .11rem .11rem;
+    vertical-align: middle;
+}
+.payShopList .payShopNum span{
+    font-size: .24rem;
+    color: #999999;
+}
+
+.payPattern{
+    position: fixed;
+    left:0;
+    bottom: 0;
+    width: 100%;
+    background-color:#fff;
+}
+.payPattern .patternBox{
+    overflow: hidden;
+    font-size: .28rem;
+    padding:.22rem 0;
+    padding-left: .4rem;
+    border-bottom: 1px solid #b5b5b5;
+}
+.patternBox div{
+    float: left;
+    width: 1.88rem;
+    height: .64rem;
+    border:1px solid #c9c9c9;
+    text-align: center;
+    line-height: .64rem;
+    color: #666666;
+    margin-right: .2rem;
+}
+
+/* 支付选中 */
+.patternBox .payActive{
+    border-color: #bf0a14;
+    color: #bf0a14;
+}
+
+.payAccount{
+    overflow: hidden;
+}
+.payAccount .accountNum{
+    float: left;
+    padding-left: .48rem;
+    font-size: .28rem;
+    padding-top: .38rem;
+}
+.payAccount .accountNum span{
+    color: #d51624;
+}
+.payAccount .payBtn{
+    float: right;
+    font-size: .24rem;
+    width: 1.79rem;
+    text-align: center;
+    background-color: #d51624;
+    height: .99rem;
+    line-height: .99rem;
+    color: #ffffff;
+}
+.doc{
+    margin-bottom: 2rem;
+}
+
+

@@ -1,0 +1,158 @@
+.uploadInfo{
+  font-size: .26rem;
+  padding-top: .3rem;
+}
+.uploadInfo .infoDescribe{
+  padding-left: .4rem;
+}
+.infoDescribe .goodsNum{
+  padding-bottom: .33rem;
+}
+.infoDescribe .goodsNum span{
+  color: #333333;
+}
+.infoDescribe .remark{
+  padding-bottom: .28rem;
+}
+.infoDescribe .remark .errorText{
+  color: #bf0a14;
+}
+.uploadInfo .infoImg{
+  padding-left: .42rem;
+  overflow: hidden;
+}
+.uploadInfo .infoImg li{
+  float: left;
+  width: 2.7rem;
+  height: 1.58rem;
+  background-color: #eeeeee;
+  margin-right: .27rem;
+}
+.uploadInfo .infoImg .infoImgShow{
+  width: .9rem;
+  height: .9rem;
+  background-color: #bf0a14;
+  border-radius: .45rem;
+  margin: .34rem auto;
+  text-align: center;
+  line-height: .9rem;
+}
+.infoImg .infoImgShow i{
+  display: inline-block;
+  width: .46rem;
+  height: .36rem;
+  background: url('../images/camera.jpg') no-repeat;
+  background-size: .46rem .36rem;
+}
+
+.provePop .shade{
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #000;
+  opacity: .6;
+}
+.provePop .proveInfo{
+  width: 5.08rem;
+  background-color: #fff;
+  position: absolute;
+  top: 1.3rem;
+  left: 1.2rem;
+  z-index: 9;
+  border-radius: 4px;
+  padding-bottom: .28rem;
+}
+.proveInfo .proveHead {
+  overflow: hidden;
+  padding-top: .32rem;
+  padding-left: .41rem;
+  border-bottom: 1px solid #c1d0c9;
+  padding-bottom: .34rem;
+}
+.proveHead .cancelBg{
+  float: left;
+  width: .22rem;
+  height: .27rem;
+  background: url('../images/bankCancel.jpg') no-repeat;
+  background-size: .22rem .27rem;
+  margin-top: 2px;
+  
+}
+.proveHead  .proveTitle{
+  font-size: .32rem;
+  color: #232323;
+  float: left;
+  padding-left: .94rem;
+}
+.proveInfo .shopName{
+  font-size: .32rem;
+  margin:0 .26rem;
+  border-bottom: 1px solid #efefef;
+  padding-top: .24rem;
+}
+.proveInfo .shopName span{
+  display: block;
+  text-align: center;
+  padding-bottom: .2rem;
+  color: #070707;
+}
+.proveInfo .shopName span:nth-of-type(2){
+  color: #000;
+  font-weight: bold;
+}
+.proveInfo .proveText{
+  font-size: .24rem;
+  padding: 0 .26rem;  
+}
+.proveText .describeText{
+  color: #333333;
+  padding:.19rem 0 .24rem 0;
+}
+.proveInfo .bankInfo{
+  background-color: #fef9f2;
+  font-size: .24rem;
+  padding:.23rem .18rem .14rem .18rem;
+}
+.bankInfo .bankName{
+  padding-bottom: .23rem;
+}
+.bankInfo .bankAccount{
+  padding-bottom: .18rem;
+}
+.bankInfo .bankAccount .difference{
+  color: #bf0a14;
+}
+.proveInfo .bankPassword{
+  font-size: .26rem;
+  padding-top: .22rem;
+}
+.bankPassword .passwordText{
+  color: #333333;
+}
+.bankPassword .passwordText span{
+  color: #bf0a14;
+}
+.bankPassword .passwordFrame{
+  overflow: hidden;
+  padding-top: .23rem;
+  padding-bottom: .38rem;
+}
+.passwordFrame input{
+  outline: none;
+  width:.77rem;
+  height: .78rem;
+  float: left;
+  margin-right: -1px;
+  text-align: center;
+}
+.proveInfo .notarizeBtn{
+  width: 2.13rem;
+  height: .72rem;
+  background-color: #bf0a14;
+  text-align: center;
+  line-height: .72rem;
+  color: #fff;
+  font-size: .26rem;
+  border-radius: 4px;
+  margin: 0 auto;
+}

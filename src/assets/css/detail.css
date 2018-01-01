@@ -1,0 +1,251 @@
+.detailPrice{
+    border-bottom: .2rem solid #ebebeb;
+}
+.detailPrice .shopPrice{
+    font-size: .26rem;
+    color: #232323;
+    border-bottom: 1px solid #dcdcdc;
+    padding:.12rem 0 .28rem 0;
+    margin-left: .24rem;
+    margin-right: .2rem ;
+}
+.detailPrice .shopPrice span{
+    color: #de0000;
+    margin-right: .1rem;
+}
+.detailPrice p{
+    font-size: .24rem;
+    color: #999999;
+    padding: .32rem 0;
+    border-bottom: 1px solid #ebebeb;
+    padding-left: .24rem;
+}
+
+.detaulBottom{
+    font-size: .28em;
+}
+.selectable{    
+    overflow: hidden;
+    padding-top: .20rem;
+    padding-bottom: .20rem;
+    margin-bottom: 0.2rem;
+}
+
+.selectable .hintText{   
+    color: #999999;
+    float: left;
+    padding-left: .3rem;
+    padding-right: .26rem;
+}
+.selectableShop span:nth-of-type(1){
+    padding-right: 1.6rem;
+}
+.selectableShop2{
+    padding-top: .29rem;
+    padding-left: 1.2rem;
+}
+
+.describeShop{
+    overflow: hidden;
+    padding:0 .3rem;
+    padding-top: .21rem;
+    padding-bottom: 1.24rem;
+}
+.describImg{
+    width: 3.42rem;
+    height: 1.78rem; 
+    float: left;
+}
+.describImg img{
+    width: 100%;
+    height: 100%;
+}
+.describeShop p{
+    width: 3.1rem;
+    float: right;
+    color: #666666;
+    padding-top: .12rem;
+}
+.detailMap{
+    width: 6.87rem;
+    height: 1.82rem;
+    margin-left: .3rem;
+}
+.detailMap img{
+    width: 100%;
+    height: 100%;
+}
+.shopBtn{
+    line-height: 1rem;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.shopBtn span{
+    float: left;
+    width: 50%;
+    height: 1rem;
+    font-size: .32rem;
+    color: #ffffff;
+    text-align: center;
+}
+.shopBtn span a {
+    color: #fff;
+}
+.shopBtn span:nth-of-type(1){
+    background-color: #1d252f;
+}
+.shopBtn span:nth-of-type(1) i{
+    display: inline-block;
+    width: .36rem;
+    height: .32rem;
+    background: url('../images/shopCar.jpg') no-repeat;
+    margin-right: .18rem;
+    background-size: .36rem .32rem;
+    vertical-align: middle;
+}
+.shopBtn span:nth-of-type(2){
+    background-color: #d51624;
+}
+.shopBtn span:nth-of-type(2) i{
+    display: inline-block;
+    width: .32rem;
+    height: .38rem;
+    background: url('../images/buy.jpg') no-repeat;
+    margin-right: .18rem;
+    background-size: .32rem .38rem;
+    vertical-align: middle;
+}
+.shade{
+    width:100%;
+    height: 100%;
+    background: rgba(0,0,0,.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+.ensureBox{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    font-size: .28rem; 
+    background-color: #ffffff; 
+    z-index: 99;
+}
+.ensureShop{ 
+    overflow: hidden;           
+    padding-top: .32rem;
+    margin-left: .21rem;
+    margin-right: 8px;
+    padding-bottom: .28rem;
+    border-bottom: 1px solid #e5e5e5;
+}
+.ensureShop .ensureImg{
+    width: 1.81rem;
+    height: 1.26rem;
+    border: 1px solid #8a8a8a;
+    float: left;
+   
+}
+.ensureShop .ensureImg img{
+    width: 100%;
+    height: 100%;
+}
+.ensureShop .ensureText{
+    float: left;
+    padding-left: .3rem;
+    padding-top: 4px;
+}
+.ensureText p:nth-of-type(1){
+    color: #333333;
+}
+.ensureText p:nth-of-type(2){
+    color: #de0000;
+    padding-top: .36rem;
+}
+.cancelBtn{
+    float: right;
+    width: .36rem;
+    height: .36rem;
+    border-radius: .18rem;
+    border:1px solid #b5b5b5;
+    margin-right: .16rem;
+    text-align: center;
+    line-height: .36rem;
+}
+.cancelBtn i{
+    display: inline-block;
+    width: .18rem;
+    height: .18rem;
+    background: url('../images/cancel.jpg') no-repeat;
+    background-size: .18rem .18rem;
+}
+.ensureSum{
+    overflow: hidden;
+    padding:.3rem .24rem .32rem .19rem;
+}
+.ensureSum .sum{
+    float: left;
+    color: #666666;
+    padding-top: .10rem;
+}
+.ensureSum .ensureNum{
+    float: right;
+}
+.ensureSum .ensureNum span{
+    float: left;
+    height: .55rem;
+    text-align: center;
+    line-height: .55rem;
+}
+.ensureSum .ensureNum span:nth-of-type(1){
+    width: .78rem;
+    border: 1px solid #dcdcdc; 
+    border-right: none;
+}
+.ensureSum .ensureNum span:nth-of-type(1) i{
+    float: left;
+    width:.2rem;
+    height: 2px;
+    background: url('../images/errsureReduce.jpg') no-repeat;
+    background-size: .2rem 2px;
+    margin-top: .27rem;
+    margin-left:.25rem;
+}
+/*.ensureSum .ensureNum span:nth-of-type(2){
+    width: 1.79rem;
+    border:1px solid #989898;
+    color: #333333;
+}*/
+.ensureSum .ensureNum input {
+    float: left;
+    width: 2rem;
+    text-align: center;
+    height: .5rem;
+}
+.ensureSum .ensureNum span:nth-of-type(2){
+    width:0.72rem;
+    border:1px solid #989898;
+    border-left: none;
+}
+.ensureSum .ensureNum span:nth-of-type(2) i{
+    float: left;
+    width:.2rem;
+    height: .2rem;
+    background: url('../images/ensureAdd.jpg') no-repeat;
+    background-size: .2rem .2rem;
+    margin-top: .18rem;
+    margin-left: .26rem;
+}
+.ensureBox .ensureBtn{
+    width:100%;
+    height: 1rem;
+    background-color: #d51624;
+    color: #ffffff;
+    font-size: .32rem;
+    text-align: center;
+    line-height: 1rem;
+}

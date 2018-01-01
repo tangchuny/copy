@@ -1,0 +1,102 @@
+@import './reset.css';
+@import './font.css';
+@import './public.css';
+@import './index.css';
+@import './car.css';
+@import './store.css';
+@import './siteList.css';
+@import './map.css';
+@import './detail.css';
+@import './procurement.css';
+@import './shopItem.css';
+@import './payment.css';
+@import './indent.css';
+@import './shopping.css';
+@import './planRecharge';
+@import './siteShop.css';
+@import './scanRecharge.css';
+@import './scanUnderway.css';
+@import './payUpload.css';
+@import './bind.css';
+@import './weChatBind.css';
+@import './joinUs.css';
+@import './zxx-lib.css';
+@import './app2.css';
+*{
+  margin:0;
+  padding:0;
+}
+ul,li {
+  list-style: none;
+}
+body {
+  font-family: '微软雅黑';
+}
+a{
+  text-decoration: none;
+}
+.nav-box {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 1rem;
+  font-size: .24rem;
+  border-top: 1px solid #bfbfbf;
+  background: #fff;
+}
+
+.nav-box li {
+  float:left;
+  text-align: center;
+  list-style:none;
+  width: 33.33%;
+}
+.nav-box li a {
+  color:#000;
+  text-decoration: none;
+  margin-top: .2rem;
+  display: inline-block;
+}
+
+.nav-box li .activeClass {
+  color:#b20a17;
+}
+.nav-box li i {
+  width: .39rem;
+  height:.39rem;
+  display: block;
+  margin: 0 auto;
+}
+.home i {
+  background: url('../../assets/images/home.png') no-repeat;
+  background-size: contain;
+}
+.home .activeClass i {
+  background: url('../../assets/images/homeActive.png') no-repeat;
+  background-size: contain;
+}
+.nav-box .car {
+  position: relative;
+  top: -.56rem
+}
+.nav-box .car i {
+  width: .85rem;
+  height: .85rem;
+  background: url('../../assets/images/car.png') no-repeat;
+  background-size: contain;
+}
+
+.order .activeClass i {
+  background: url('../../assets/images/orderActive.png') no-repeat;
+  background-size: contain;
+}
+.order i {
+  background: url('../../assets/images/order.png') no-repeat;
+  background-size: contain;
+}
+.car span {
+  margin-top: .1rem;
+  display: inline-block;
+}
+
+
