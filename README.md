@@ -1,6 +1,6 @@
-# vue-exmple1
+﻿# vue-exmple1
 
-> 这是我的项目
+> d这是我的项目
 
 ## Build Setup
 
