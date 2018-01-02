@@ -37,14 +37,28 @@
   text-align: center;
   line-height: .9rem;
 }
-.infoImg .infoImgShow i{
+.infoImg .infoImgShow {
   display: inline-block;
   width: .46rem;
   height: .36rem;
   background: url('../images/camera.jpg') no-repeat;
   background-size: .46rem .36rem;
 }
-
+.upload_pic {
+  display: block;
+  width: 100%;
+  height: 6.9em;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  border-radius: 5px;
+  display: inline-block;
+  width: .46rem;
+  height: .36rem;
+  background: url('../images/camera.jpg') no-repeat;
+  background-size: .46rem .36rem;
+}
 .provePop .shade{
   position: fixed;
   left: 0;

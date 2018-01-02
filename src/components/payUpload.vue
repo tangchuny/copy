@@ -66,7 +66,12 @@
         </div>
       </div>
       <ul class="infoImg"> 
-        <li><div class="infoImgShow"><i></i></div></li>
+        <li><div class="infoImgShow rel">
+          <input type="file" name="file3" id="file3" class="upload_pic" style="
+    width: 100%;
+">
+          </div>
+          </li>
         <li><div class="infoImgShow"><i></i></div></li>
       </ul>
     </div>
@@ -119,3 +124,27 @@
     </div>
   </div>
 </template>
+
+<script>
+
+  import Vue from 'vue';
+  import axios from 'axios';
+  import { Swipe, SwipeItem } from 'mint-ui';
+  import { mapState, mapGetters,mapActions} from 'vuex'
+
+  Vue.component(Swipe.name, Swipe);
+  export default {
+    name: 'upload',
+    data(){
+      return {   }
+    },
+    mounted() {
+      this.init()
+    },
+    methods: {
+      init() {
+
+      }
+    },
+  }
+</script>
