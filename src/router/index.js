@@ -140,6 +140,10 @@ let router = new VueRouter({
     },
     {
       path: '/payUpload',
+      name: 'payUpload',
+      meta: {
+        title: '订单详情'
+      },
       component: payUpload
     },
     {

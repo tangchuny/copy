@@ -39,14 +39,14 @@
         </ul>
       </div>
 
-      <!-- <div style="margin-bottom:2rem;">
+      <div style="margin-bottom:2rem;">
         <span @click="$router.push({path: '/weChatBind'})">绑定会员</span>
         <span @click="$router.push({path: '/scanUnderway'})">充电中</span>
         <span @click="$router.push({path: '/startRecharge'})">这边充电</span>
         <span @click="$router.push({path: '/completeRecharge'})">充电订单</span>
         <span @click="$router.push({path: '/siteList'})">附近充电桩</span>
-        <span @click="$router.push({path: '/map'})">地图</span>
-      </div> -->
+        <span @click="$router.push({path: '/payUpload'})">地图</span>
+      </div>
     </div>
     <publicFooter></publicFooter>
   </div>

@@ -201,8 +201,7 @@ export default {
 						Toast('没有选择商品');
 						return false;
       }
-        this.loading2 = true
-
+      this.loading2 = true
       this.postOrder(this.payType);
     },
     //线下支付
@@ -212,6 +211,7 @@ export default {
 
     onOk() {
       this.payWindow = false;
+      this.$router.push({ name: '/payUpload'})
     },
     //生成订单
     postOrder(state) {

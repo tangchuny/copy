@@ -76,7 +76,7 @@
       <div class="payCancelBtn">取消订单</div>
     </div>
     <!-- 弹框 -->
-    <div class="provePop">
+    <!-- <div class="provePop">
       <div class="shade"></div>
       <div class="proveInfo">
         <div class="proveHead">
@@ -112,10 +112,10 @@
               <input type="password">
             </div>
           </div>
-        </div>
+        </div> 
 
         <div class="notarizeBtn">确认</div>
-      </div>
+      </div>-->
     </div>
   </div>
 </template>

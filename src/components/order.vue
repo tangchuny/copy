@@ -35,7 +35,7 @@
             <div class="storeText" >
               <p>{{sub.goods_name}}</p>
               <p>￥658.00 <span class="gc ml5">x {{sub.number}}</span></p>
-              <p>微信支付</p>
+              <p>{{ item.pay_way ==='1'? '微信支付' : '下线支付'}}</p>
             </div>
           </div>
           
@@ -46,7 +46,7 @@
             </div>
             <div class="paymentBtn">
               <span @click="handleCancel(item)" v-if="item.order_status =='0'">取消订单</span>
-              <span v-if="item.order_status =='0'">去支付</span>
+              <span v-if="item.order_status =='0'" @click="$router.push({name:'payUpload'})">去支付</span>
               <span v-if="item.order_status =='2'">重新支付</span>
               <span v-if="item.order_status =='4'|| item.order_status =='3'" class="red">已经取消</span>
             </div>
