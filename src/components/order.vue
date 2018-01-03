@@ -8,11 +8,11 @@
       <mt-tab-item id="1" @click.native="change(1)">认购订单</mt-tab-item>
       <mt-tab-item id="2" @click.native="change(2)">采购订单</mt-tab-item>
     </mt-navbar>
-        <div v-if="orderList.list.length == 0 " class="g9 tc mt20">
+        <!-- <div v-if="orderList.list.length == 0 " class="g9 tc mt20">
           暂无数据
-        </div>
+        </div> -->
     <!-- tab-container -->
-        <div v-else  class="officialStore" v-for="(item, index) in orderList.list" :key="index">
+        <div  class="officialStore" v-for="(item, index) in orderList.list" :key="index">
           <div class="storeHead">
             <h3>官方商城</h3>
             <div>
@@ -46,7 +46,7 @@
             </div>
             <div class="paymentBtn">
               <span @click="handleCancel(item)" v-if="item.order_status =='0'">取消订单</span>
-              <span v-if="item.order_status =='0'" @click="$router.push({name:'payUpload'})">去支付</span>
+              <span v-if="item.order_status =='0'" @click="$router.push({name:'payUpload', params:{ id: item.id}})">去支付</span>
               <span v-if="item.order_status =='2'">重新支付</span>
               <span v-if="item.order_status =='4'|| item.order_status =='3'" class="red">已经取消</span>
             </div>

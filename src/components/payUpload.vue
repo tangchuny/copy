@@ -1,5 +1,5 @@
 <template>
-  <div class="indentBox">
+  <div class="indentBox" style="margin-bottom:3rem;">
     <div class="personCon">
       <div class="personInfo">
         <div class="personName">
@@ -65,14 +65,13 @@
           <span class="errorText">凭证上传有误，请重新上传凭证</span>
         </div>
       </div>
-      <ul class="infoImg"> 
-        <li><div class="infoImgShow rel">
-          <input type="file" name="file3" id="file3" class="upload_pic" style="
-    width: 100%;
-">
-          </div>
-          </li>
-        <li><div class="infoImgShow"><i></i></div></li>
+      <ul class="infoImg pb30"> 
+        <li class="l-flex-v"><div class="infoImgShow rel">
+          <input type="file" id="file" class="upload_pic" @change='onUpload' ref="inputer"> </div>
+        </li>
+        <li class="l-flex-v"><div class="infoImgShow rel">
+          <input type="file" name="file3" class="upload_pic"></div>
+        </li>
       </ul>
     </div>
 
@@ -136,15 +135,34 @@
   export default {
     name: 'upload',
     data(){
-      return {   }
+      return {   
+        id: null,
+      }
     },
     mounted() {
       this.init()
+      this.id = this.$route.params.id
     },
     methods: {
       init() {
-
+        axios.get(baseUrl + '/uploadproof/uploadProof',{
+          params:{
+            id: this.id,
+          }
+        }).then((res) => {
+            debugger
+        })
+      },
+      onUpload(e){
+        let file = e.target.files[0];     
+         
       }
-    },
+
+    }
   }
 </script>
+<<style>
+.indentBox .payBtn{
+  position:fixed;
+}
+</style>

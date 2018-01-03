@@ -139,7 +139,7 @@ let router = new VueRouter({
       component: scanUnderway
     },
     {
-      path: '/payUpload',
+      path: '/payUpload/:id',
       name: 'payUpload',
       meta: {
         title: '订单详情'
