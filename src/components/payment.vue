@@ -207,8 +207,7 @@ export default {
     //线下支付
     payOffLine(no) {
       // this.payWindow = true;
-      debugger
-      this.$router.push({ path: '/payUpload', params:{id: no}})
+      this.$router.push({ name: 'payUpload', params:{id: no}})
     },
 
     onOk(no) {

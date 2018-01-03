@@ -45,6 +45,7 @@
               <span>￥658.00</span>
             </div>
             <div class="paymentBtn">
+              <span @click="$router.push({name:'payUpload', params:{ id: item.id}})" class="red">查看订单</span>
               <span @click="handleCancel(item)" v-if="item.order_status =='0'">取消订单</span>
               <span v-if="item.order_status =='0'" @click="$router.push({name:'payUpload', params:{ id: item.id}})">去支付</span>
               <span v-if="item.order_status =='2'">重新支付</span>

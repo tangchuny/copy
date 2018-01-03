@@ -41,6 +41,18 @@
           <span>{{detail.id}}</span>
         </div>
         <div class="goodsNum">
+          <span>订单状态：</span>
+          <span class="red" v-if="detail.order_status =='0'">待支付</span>
+          <span class="red"  v-if="detail.order_status =='1'">待确认</span>
+          <span  class="red" v-if="detail.order_status =='2'">支付失败</span>
+          <span  class="red" v-if="detail.order_status =='3'">订单自动撤销 </span>
+          <span  class="red" v-if="detail.order_status =='4'">主动撤销 </span>
+          <span  class="red" v-if="detail.order_status =='5'">已支付（待发货） </span>
+          <span class="red"  v-if="detail.order_status =='6'">已发货 </span>
+          <span  class="red" v-if="detail.order_status =='7'">已完成 </span>
+        </div>
+        
+        <div class="goodsNum">
           <span>下单时间：</span>
           <span>{{detail.order_time}}</span>
         </div>
@@ -64,13 +76,13 @@
       </ul>
     </div>
 
-    <div class="payBtn">     
+    <div class="payBtn" v-if="detail.order_status =='0' || detail.order_status =='2'">     
       <div class="weChatPayBtn" v-if="!canceled" @click="comfirm">确认</div>
       <div class="payCancelBtn" @click="cancel" v-if="!canceled">取消订单</div>
       <div class="payCancelBtn"  v-if="canceled">取消订单</div>
     </div>
     <!-- 弹框 -->
-    <div class="provePop" :class="{'none': none }">
+    <div class="provePop" :class="{'none': !none }">
       <div class="shade"></div>
       <div class="proveInfo">
         <div class="proveHead">
@@ -131,7 +143,7 @@ import { userOpenId } from '../api/config'
     name: 'upload',
     data(){
       return {   
-        none:false,
+        // none:false,
         detail: '',
         bank:'',
         number1:'',
@@ -148,24 +160,39 @@ import { userOpenId } from '../api/config'
       this.getBank()
     },
     computed: {
+      none: {
+        get() {
+          if(this.detail.order_status == '0' || this.detail.order_status =='2'){
+            return true
+          } else {
+            return false
+          }
+        },
+        set(status) {
+          return status
+        }
+      },
       bankNumber() {
-         let arr = this.bank.list.account_no.split('')
-         let arr2 = this.bank.num_index.split('|')
-         let bankarr = []
-         for(let i of arr) {
-           bankarr.push({
-             number: i,
-             check:false
-           })
-         }
-         for(let i = 0; i<bankarr.length;i++) {
-           for(let j of arr2){
-             if(i == j) {
-                bankarr[i].check = true
-             }
-           }
-         }
+        if(this.bank){
+            let arr = this.bank.list.account_no.split('')
+            let arr2 = this.bank.num_index.split('|')
+            let bankarr = []
+            for(let i of arr) {
+              bankarr.push({
+                number: i,
+                check:false
+              })
+            }
+            
+            for(let i = 0; i<bankarr.length;i++) {
+              for(let j of arr2){
+                if(i == j) {
+                  bankarr[i].check = true
+                }
+              }
+            }
          return bankarr
+         } 
       }
     },
     methods: {
@@ -230,9 +257,8 @@ import { userOpenId } from '../api/config'
               inputNum: this.number1+this.number2+this.number3+this.number4
             }
           }).then((res) => {
-            debugger
             if(res.data.resultCode ==='0'){
-              this.none = true
+              this.none(false)
               Toast('检验成功！')
             } else {
               Toast('检验失败！')
@@ -252,7 +278,18 @@ import { userOpenId } from '../api/config'
           })
       },
       comfirm() {
-
+        axios.get(baseUrl + '/uploadproof/uploadProof',{
+            params:{
+              id: this.detail.id
+            }
+          }).then((res) => {
+            if(res.data.resultCode =='0'){
+              Toast('更新订单成功！')
+              this.init()
+            } else {
+              Toast('更新订单失败！')
+            }
+          })
       },
       getBase64 : function(file,callback){  
             var maxWidth = 640;  
