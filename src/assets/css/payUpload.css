@@ -23,7 +23,7 @@
 }
 .uploadInfo .infoImg li{
   float: left;
-  width: 2.7rem;
+  width: 2rem;
   height: 1.58rem;
   background-color: #eeeeee;
   margin-right: .27rem;
@@ -41,7 +41,7 @@
   display: inline-block;
   width: .46rem;
   height: .36rem;
-  background: url('../images/camera.jpg') no-repeat;
+  background: url('../images/camera.jpg') no-repeat center center;
   background-size: .46rem .36rem;
 }
 .upload_pic {
@@ -54,9 +54,7 @@
   opacity: 0;
   border-radius: 5px;
   display: inline-block;
-  width: .46rem;
-  height: .36rem;
-  background: url('../images/camera.jpg') no-repeat;
+  /* background: url('../images/camera.jpg') no-repeat; */
   background-size: .46rem .36rem;
 }
 .provePop .shade{

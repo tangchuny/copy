@@ -96,13 +96,15 @@ export default {
           name: '认购电桩',
           checked:false,
           hasEditor:true,
-          sub:[]
+          sub:[],
+          type: '1',
         },
         {
           name: '采购电桩',
           checked: false,
           hasEditor:false,
-          sub:[]
+          sub:[],
+          type: '2',
         }
       ]
     }
@@ -144,6 +146,7 @@ export default {
       })
     },
     selectedProduct(item,value){
+       this.types = this.list[value].type
         if(typeof item.checked == 'undefined') {
               this.$set(item, 'checked', true);
           } else {
@@ -161,6 +164,7 @@ export default {
         });
     },
     checkAll(value) {
+      this.types = this.list[value].type
       if (value == 0) {
           this.nocheck(1)
       } else {

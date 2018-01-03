@@ -52,7 +52,7 @@
 		
       <!-- 采购商品 -->
 		<div class="payShop">
-				<h3 class="payTitle"> <img src="../assets/images/icon.png" width="20" class="mr5"/> 认购商品</h3>
+				<h3 class="payTitle"> <img src="../assets/images/icon.png" width="20" class="mr5"/> {{ type == '1' ? '认购商品' : '采购商品'}}</h3>
 				<ul class="payShopList">
 					<li v-for="(item,index) in list" :key="index">
 						<div class="payShopListImg"><img src="item.image_url"></div>
@@ -161,7 +161,7 @@ export default {
       totalnumber: "",
       selected: "1",
       payType: "1",
-      type: "1",
+      type: "",
       username: "",
       tel: ""
     };
@@ -202,19 +202,21 @@ export default {
 						return false;
       }
       this.loading2 = true
-      this.postOrder(this.payType);
+      this.submitOrder(this.payType);
     },
     //线下支付
-    payOffLine() {
-      this.payWindow = true;
+    payOffLine(no) {
+      // this.payWindow = true;
+      debugger
+      this.$router.push({ path: '/payUpload', params:{id: no}})
     },
 
-    onOk() {
-      this.payWindow = false;
-      this.$router.push({ name: '/payUpload'})
+    onOk(no) {
+     // this.payWindow = false;
+      
     },
     //生成订单
-    postOrder(state) {
+    submitOrder(state) {
       for (let item of this.list) {
         item.amount = (item.unit_price || 1) * item.number;
         item.image_url = item.image_url || "0";
@@ -222,7 +224,7 @@ export default {
       }
       let data = {
         openId: "oiaeIwtc5Gedl6t9v6oQi7Y6m99c",
-        type: this.type,
+        type: this.get_order.type,
         pay_way: this.payType,
         order_amount: this.totalnumber,
         customer_name: this.username,
@@ -249,7 +251,7 @@ export default {
                 this._setWxpayInfo(res.data);
               });
             } else {
-              this.payOffLine();
+              this.payOffLine(res.data.obj.id);
             }
           } else {
             Toast(res.data.resultMsg);

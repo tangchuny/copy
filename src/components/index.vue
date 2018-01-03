@@ -45,7 +45,7 @@
         <span @click="$router.push({path: '/startRecharge'})">这边充电</span>
         <span @click="$router.push({path: '/completeRecharge'})">充电订单</span>
         <span @click="$router.push({path: '/siteList'})">附近充电桩</span>
-        <span @click="$router.push({path: '/payUpload'})">地图</span>
+        <span @click="$router.push({path: '/payUpload', params:{ id: '234'}})">地图</span>
       </div>
     </div>
     <publicFooter></publicFooter>
