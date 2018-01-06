@@ -99,7 +99,8 @@
       init(item) {
           this.getOrder({
             params: {
-              openId:'oiaeIwtc5Gedl6t9v6oQi7Y6m99c',
+              // openId: 'oiaeIwtc5Gedl6t9v6oQi7Y6m99c',
+              openId: localStorage.getItem('openId'),
               currentPage: 1,
               pageSize: 12,
               type: item
@@ -113,7 +114,8 @@
       handleCancel(item) {
         this.cancelOrder({
           params: {
-            openId:'oiaeIwtc5Gedl6t9v6oQi7Y6m99c',
+            // openId:'oiaeIwtc5Gedl6t9v6oQi7Y6m99c',
+            openId: localStorage.getItem('openId'),
             id: item.id,
           }
         }).then((res) => {

@@ -226,6 +226,9 @@
               this.buy = false;
               this.isSelect = true;
               Toast(res.data.resultMsg);
+          } else if(res.data.resultCode === '789999'){
+              this.$router.push({name: 'joinUs'})
+          
           }else{
             Toast(res.data.resultMsg);
           }

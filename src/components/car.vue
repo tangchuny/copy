@@ -122,6 +122,7 @@ export default {
   },
   computed: {
     ...mapState('order', [ 'carList' ]),
+    ...mapState('pay', [ 'openId' ])
   },
   methods:{
       ...mapActions('order', [ 'getCarList' ]),
@@ -129,20 +130,31 @@ export default {
     //请求购物车数据
     init(){
       let that = this;
+      debugger
       this.getCarList({
         params:{
-              openId: userOpenId
-            }
+          openId: localStorage.getItem('openId')|| this.openId
+        }
       })
       .then((res) => {
-          //获取采购列表
-          that.list[0].sub = that.carList.filter(function(ele){
-            return ele.type === '1';
-          });
-          //获取认购列表
-          that.list[1].sub = that.carList.filter(function(ele){
-            return ele.type === '2';
-          });
+        if( res) {
+            if(res.data.resultCode ==='0'){
+                //获取采购列表
+                that.list[0].sub = that.carList.filter(function(ele){
+                  return ele.type === '1';
+                });
+                //获取认购列表
+                that.list[1].sub = that.carList.filter(function(ele){
+                  return ele.type === '2';
+                });
+            
+            } else if(res.data.resultCode === '789999'){
+                  this.$router.push({name: 'joinUs'})
+              
+            }else{
+              Toast(res.data.resultMsg);
+            }
+        }  
       })
     },
     selectedProduct(item,value){

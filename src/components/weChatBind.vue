@@ -118,10 +118,10 @@
           Toast('请输入11位正确的手机号');
           return false;
         }
-        
          axios.get(baseUrl+'/shopsys/sendPhMsgCode',{
           params:{
-            mobile: this.mobile
+            mobile: this.mobile,
+            openId: localStorage.getItem('openId')
           }
         })
         .then((res) => {

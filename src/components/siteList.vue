@@ -96,7 +96,7 @@ Vue.component(SwipeItem.name, SwipeItem);
 		},
     //获取路由元信息
     getMycat() {
-      return JSON.parse(localStorage.getItem("myCat"));
+     	 return JSON.parse(localStorage.getItem("myCat"));
     },
     //获取商品详情
     getGoodsDetail(lng, lat) {

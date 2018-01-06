@@ -222,7 +222,7 @@ export default {
         item.goods_address = item.goods_address || "0";
       }
       let data = {
-        openId: "oiaeIwtc5Gedl6t9v6oQi7Y6m99c",
+        openId: localStorage.getItem('openId'),
         type: this.get_order.type,
         pay_way: this.payType,
         order_amount: this.totalnumber,
@@ -262,7 +262,7 @@ export default {
     _wxpayConfig(no) {
 			 axios.get(
 					baseUrl + "/shopweixin/prepay",
-					{ params: { order_no: no, openId: userOpenId } },
+					{ params: { order_no: no, openId: localStorage.getItem('openId') } },
           {
             headers: {
               "Content-Type": "application/x-www-form-urlencoded"

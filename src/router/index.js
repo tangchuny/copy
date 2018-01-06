@@ -37,6 +37,7 @@ let router = new VueRouter({
       }
     }
   },
+  base: '/weixinHtml/',
   routes: [
     {
       path: '/',
@@ -159,6 +160,7 @@ let router = new VueRouter({
     },
     {
       path: '/joinUs',
+      name: 'joinUs',
       component: joinUs,
       meta: {
         title: '加入我们'

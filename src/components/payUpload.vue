@@ -200,7 +200,7 @@ import { userOpenId } from '../api/config'
         axios.get(baseUrl + '/shoporder/detail',{
           params:{
              id: this.$route.params.id,
-             openId: userOpenId
+             openId: localStorage.getItem('openId')
           }
         }).then((res) => {
           if(res.data.resultCode =='0'){
@@ -211,7 +211,7 @@ import { userOpenId } from '../api/config'
       getBank() {
         axios.get(baseUrl + '/merchantinfo/queryBankAccountInfo',{
           params:{
-            openId: userOpenId
+            openId: localStorage.getItem('openId')
           }
         }).then((res) => {
           if(res.data.resultCode =='0'){

@@ -5,6 +5,7 @@ import qs from 'qs'
 const pay = {
     state: {
         prepay: {},
+        openId:'',
     },
     actions: {
         getPrePay({ state, dispatch, commit }, params) {       
@@ -12,10 +13,21 @@ const pay = {
                 commit('_getPrePay', res.data)
             })
         },
+        getOpenId({ state, dispatch, commit }) {
+            localStorage.setItem('openId', 'oiaeIwtc5Gedl6t9v6oQi7Y6m99c')  
+            // return axios.get(baseUrl +'/shopsys/login').then(function (res) {
+            //     localStorage.setItem('openId', res.data.openId)
+            //     commit('_getOpenId', res.data.openId)
+            // })
+        },
     },
     mutations: {
         _getPrePay(state, res){
             state.prepay = res;
+        },
+        
+        _getOpenId(state, res){
+            state.openId = res;
         },
         
     },

@@ -37,6 +37,7 @@
 
   var CancelToken = axios.CancelToken;
   var source = CancelToken.source();
+import { mapState, mapGetters, mapActions, mapMutations } from "vuex";
 
 
   export default {
@@ -60,6 +61,7 @@
       }
     },
     methods: {
+      ...mapActions('pay', [ 'getOpenId']),
       backHandle () {
         this.$router.back()
       },
@@ -71,7 +73,13 @@
       },
       pushHandle () {
         this.$router.push('/document')
+      },
+      init() {
+        this.getOpenId()
       }
+    },
+    created() {
+      this.init()
     }
   }
 
